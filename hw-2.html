@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+        <style>
+                table{
+                        border: 5px solid rgb(232, 3, 152);
+                        border-radius: 10px;
+                        margin-left: auto;                       /*Centralise Table*/
+                        margin-right: auto;
+                }
+                td,th{
+                        border: 3px solid black;
+                        font-size: 30px;
+                        border-radius: 10px;
+                        text-align: center;
+                }
+                
+                .hara{
+                        background-color: rgba(135, 214, 135,0.5);
+                }
+                .pila{
+                        background-color: rgba(237, 237, 145,0.4);
+                }
+                .nila{
+                        background-color: rgba(176, 176, 233,0.5);
+                }
+        </style>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+</head>
+<body>
+        <table style="width: 60%;">
+<caption style="background-color: aquamarine;
+                        border: 10px solid red; padding: 20px;
+                        border-radius: 60px; margin: 15px;
+                        text-decoration: underline;
+                        font-size: 40px;">SEMINAR TIME TABLE</caption>
+
+                <tr>
+                        <th rowspan="3">Day</th>
+                        <th colspan="3">Seminar</th>
+                </tr>
+                <tr>
+                        <th colspan="2">Schedule</th>
+                        <th rowspan="2">Topic</th>
+                </tr>
+                <tr>
+                        <th>Begin</th>
+                        <th>End</th>
+                </tr>
+                <tr>
+                        <td rowspan="2">Monday</td>
+                        <td rowspan="2" class="pila">8:00 am</td>
+                        <td rowspan="2" class="nila">5:00 pm</td>
+                        <td>Introduction to XML</td>
+                </tr>
+                <tr>
+                        <td>Validity: DTD and Relax NG</td>
+                </tr>
+                <tr>
+                        <td rowspan="3">Tuesday</td>
+                        <td class="pila">8:00 am</td>
+                        <td class="pila">11:00 am</td>
+                        <td>XPath</td>
+                </tr>
+                <tr>
+                        <td class="pila">11:00 am</td>
+                        <td class="hara">2:00 pm</td>
+                        <td rowspan="2">XSL Transformations</td>
+                </tr>
+                <tr>
+                        <td class="hara">2:00 pm</td>
+                        <td class="nila">5:00 pm</td>
+                </tr>
+                <tr>
+                        <td>Wednesday</td>
+                        <td class="pila">8:00 am</td>
+                        <td class="hara">12:00 pm</td>
+                        <td>XSL Formatting Objects</td>
+                </tr>
+        </table>
+</body>
+</html>
